@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Compartor System</title>
+    <h1>Medicine Compartor System</h1>
+    <style>
+
+        /* Style for the menu bar */
+        .menu-bar {
+            background-color: black;
+            overflow: hidden;
+        }
+
+        /* Style for the menu items */
+        .menu-bar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        
+        /* Clear floats */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+
+
+</head>
+ 
+<body >
+    <!-- Your content here -->
+
+    
+    
+<div class="menu-bar">
+    <a href="home.html">Home</a>
+    
+    
+        
+    
+    <div class="clearfix"></div>
+</div>
+
+<!-- Add your content here -->
+<div style="padding:20px;">
+   
+</div>
+
+<style>
+    /* Basic CSS for styling */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4caf50;
+        color: #fff;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    .login-form .links {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .login-form .links a {
+            text-decoration: none;
+            color: blue;
+            margin: 0 10px;
+        }
+
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <input type="text" id="loginUsername" placeholder="Username" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <input type="submit" value="Login">
+    </form>
+    <div class="links">
+        <a href="forgot password.html">Forgot Password?</a>
+        <a href="sign in.html">Sign Up</a>
+    </div>
+
+</div>
+
+<script>
+    // Function to check user credentials and redirect to home page if valid
+    function loginUser(username, password) {
+        var savedUserDetails = JSON.parse(localStorage.getItem('userDetails'));
+        if (savedUserDetails && savedUserDetails.username === username && savedUserDetails.password === password) {
+            alert('Login successful! Redirecting to home page.'); // For demonstration
+            window.location.href = 'home.html'; // Redirect to home page
+        } else {
+            alert('Invalid username or password. Please try again.');
+        }
+    }
+
+    // Function to handle login form submission
+    document.getElementById('loginForm').onsubmit = function(event) {
+        event.preventDefault(); // Prevent form submission
+        var username = document.getElementById('loginUsername').value;
+        var password = document.getElementById('loginPassword').value;
+        loginUser(username, password);
+    };
+</script>
+</body>
+
+
+
+    
+
+</body>
+</html>

@@ -19,15 +19,18 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/search', methods=['POST'])
+@app.route('/search', methods=['GET', 'POST'])
 def search():
-    user_input = request.form['composition']
-    user_composition = [x.strip().lower() for x in user_input.split(',')]
-    matches = []
-    for med in predefined_medicines:
-        if any(comp.lower() in user_composition for comp in med.compositions):
-            matches.append(med)
-    return render_template('result.html', matches=matches)
+    if request.method == 'POST':
+        user_input = request.form['composition']
+        user_composition = [x.strip().lower() for x in user_input.split(',')]
+        matches = []
+        for med in predefined_medicines:
+            if any(comp.lower() in user_composition for comp in med.compositions):
+                matches.append(med)
+        return render_template('result.html', matches=matches)
+    else:
+        return "Invalid request method. Please use POST method to search for medicines."
 
 
 if __name__ == '__main__':

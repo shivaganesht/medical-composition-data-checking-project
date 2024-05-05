@@ -1,5 +1,5 @@
-# medical-composition-data-checking-project
-This project is done by Parinitha Kore. All rights is claimed by Parinitha Kore.
+## Ownership and Copyright
+This project is owned and maintained by Parinitha Kore. All copyrights, trademarks, and intellectual property rights related to this project belong to Parinitha Kore. Parinitha Kore reserves the right to claim the project and its contents on any platform.
 
 # Medicine Composition Search
 
@@ -46,7 +46,3 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to customize this README.md file according to your project's specifics. You can add more sections, such as "Credits", "Acknowledgements", or "Support", depending on your project's requirements.

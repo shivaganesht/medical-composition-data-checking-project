@@ -15,7 +15,7 @@ Medicine Composition Search is a Flask web application that allows users to sear
 
 1. Clone the repository to your local machine:
    ```
-   git clone https://github.com/your-username/medical-composition-data-checking-project.git
+   git clone https://github.com/shivaganesht/medical-composition-data-checking-project.git
    ```
 
 2. Navigate to the project directory:

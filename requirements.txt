@@ -1,0 +1,31 @@
+# Core Requirements
+Flask               
+python-dotenv        # To load environment variables from a .env file (optional, but recommended)
+
+# Development Tools (Optional)
+autopep8             # For automatic Python code formatting 
+flake8               # For static code analysis and style checking
+```
+
+**Explanation:**
+
+*   **Flask:** The fundamental web framework for building your application.
+*   **python-dotenv:** This is helpful for managing configuration settings like your secret key or database connection details separately from your code. It's a good practice, especially if you plan to deploy your app.
+
+**Optional Development Tools:**
+
+*   **autopep8:** Helps keep your Python code clean and consistently formatted.
+*   **flake8:**  A linter that helps identify potential errors and enforce good coding style.
+
+**Additional Installation Notes:**
+
+1.  **Python:** Ensure you have Python 3.7 or higher installed. If you need to install/update Python, you can download it from the official Python website: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+2.  **VS Code (Optional):**  While not strictly required, VS Code is a popular code editor with great Python support and extensions that make Flask development easier.
+3.  **Live Server Extension (If using VS Code):** This extension provides a convenient way to automatically reload your web page when you make changes to your code. 
+
+**Important Considerations:**
+
+*   **Virtual Environments:** It's highly recommended to use a virtual environment for Python projects. This keeps your project's dependencies isolated from your system's global Python packages.
+*   **Web Browser:**  Ensure you have a modern web browser like Chrome, Firefox, or Edge for the best user experience. 
+
+Let me know if you have any other questions!
